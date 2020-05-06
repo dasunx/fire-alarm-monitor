@@ -1,8 +1,9 @@
 //JDK version 13
 //Read fire-alarm-system-backend install.txt file
-1) Open fire-alarm-rmi and sensor-demo projects in netbeans
+1) Open fire-alarm-rmi and fire-alarm-sensor-simulator projects in netbeans
 2) External library jar files:
 	i) fire-alarm-rmi:
+		** this project already contains jar files. if error comes up please add these jar files
 		1)commons-logging-1.2.jar
 		2)commons-logging-1.2-javadoc.jar
 		3)http-client-4.5.2.jar
@@ -12,7 +13,7 @@
 		7)activation.jar
 		8)mail.jar
 	
-	ii) sensor-demo
+	ii) fire-alarm-sensor-simulator
 		1)commons-logging-1.2.jar
 		2)commons-logging-1.2-javadoc.jar
 		3)http-client-4.5.2.jar
@@ -36,7 +37,7 @@
 6) Run MainFrame.java
 		*This is the rmi client
 
-7) claen and build the project sensor-demo
+7) claen and build the project fire-alarm-sensor-simulator
 
 8) replace user email and password
 	i) go to SensorServer.java -> line 242 and 243 to change user and password
@@ -52,6 +53,3 @@
 	*** Run sensor-demo applications as many as you need.
 	*** Select different sensors with different sensor-demo application
 	
-
-
-		
