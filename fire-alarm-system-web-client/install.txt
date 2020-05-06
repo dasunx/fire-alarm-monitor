@@ -1,0 +1,5 @@
+1) Open project in preffered IDE
+2) open terminal
+2) run -npm install
+3) run -npm start
+

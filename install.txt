@@ -1,0 +1,57 @@
+//JDK version 13
+//Read fire-alarm-system-backend install.txt file
+1) Open fire-alarm-rmi and sensor-demo projects in netbeans
+2) External library jar files:
+	i) fire-alarm-rmi:
+		1)commons-logging-1.2.jar
+		2)commons-logging-1.2-javadoc.jar
+		3)http-client-4.5.2.jar
+		4)http-client-builder-2.0.jar
+		5)httpcore-4.4.4.jar
+		6)json-20190722.jar
+		7)activation.jar
+		8)mail.jar
+	
+	ii) sensor-demo
+		1)commons-logging-1.2.jar
+		2)commons-logging-1.2-javadoc.jar
+		3)http-client-4.5.2.jar
+		4)http-client-builder-2.0.jar
+		5)httpcore-4.4.4.jar
+		6)json-20190722.jar
+		
+		
+	** All the Jar files can be found in /jar folder
+	
+3) Add respective libraries to the project libraries.
+		i) project structure -> Libraries -> add Jar/Folder -> select respective jar files for each project according to point 2)
+		ii)add jar file
+		
+4) Clean and build the fire-alarm-rmi project
+
+5) Run SensorServer.java in netbeans
+		**do number 8) if you are willing to recieve emails
+		**Make sure that port number 1099 is free
+		**Do not run rmiregistry in commandline or anywhere
+6) Run MainFrame.java
+		*This is the rmi client
+
+7) claen and build the project sensor-demo
+
+8) replace user email and password
+	i) go to SensorServer.java -> line 242 and 243 to change user and password
+	ii) uncomment sendMail() in MainFrame.java -> source -> line 60
+	iii) replace String to with recievers email
+ 	** If you are using other email service beside google you have to change smtp details
+	** if you are using gmail for message function make sure to allow low security apps on your gmail
+
+9) run the project sensor-demo
+
+10) choose a sensor from combobox to emulate
+11) press run sensor simualtor button to start
+	*** Run sensor-demo applications as many as you need.
+	*** Select different sensors with different sensor-demo application
+	
+
+
+		

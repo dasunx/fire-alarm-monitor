@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="dist/lib/activation.jar"/>
+	<classpathentry kind="lib" path="dist/lib/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="dist/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/http-client-builder-2.0.jar"/>
+	<classpathentry kind="lib" path="dist/lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="dist/lib/json-20190722.jar"/>
+	<classpathentry kind="lib" path="dist/lib/mail.jar"/>
+	<classpathentry kind="lib" path="dist/Login.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

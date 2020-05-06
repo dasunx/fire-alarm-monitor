@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  background-color: rgb(30, 28, 25); 
+}
+
+.app-title {
+  color: rgb(218, 203, 176);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-shadow: rgb(47, 45, 40) 1px 0px 1px, rgb(36, 34, 30) 0px 1px 1px, rgb(47, 45, 40) 2px 1px 1px, rgb(36, 34, 30) 1px 2px 1px, rgb(47, 45, 40) 3px 2px 1px, rgb(36, 34, 30) 2px 3px 1px, rgb(47, 45, 40) 4px 3px 1px, rgb(36, 34, 30) 3px 4px 1px, rgb(47, 45, 40) 5px 4px 1px, rgb(36, 34, 30) 4px 5px 1px, rgb(47, 45, 40) 6px 5px 1px, rgb(36, 34, 30) 5px 6px 1px, rgb(47, 45, 40) 7px 6px 1px;
+}
+
+.main-holder {
+  background-color: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-top: 10px;
+}
+
+/*===============================
+        Card (sensor) Styling
+ ================================= */
+img {
+  max-height: 150px;
+  margin: auto;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.card-holder{
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  width: 80%;
+  padding: 1em;
+  border-radius: 15px;
+  margin: 10px;
+  background: #ddd;
+  text-align: left;
+  box-shadow: 0px 5px 20px -10px #111111;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.card__caption {
+  background-color: rgba(255, 255, 255, 0.65);
+  padding: 1em;
+  position: relative;
+  border-radius: 0 0 3px 3px;
+}
+.card__image-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 1em 1em 0;
+  border-radius: 3px 3px 0 0;
+}
+.card__type {
+  position: absolute;
+  top: 0;
+  right: 1em;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  padding: 0.25em;
+  line-height: 1;
+  border-radius: 2px;
+  background: #bbbbbb;
+}
+.card__label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 3px;
+}
+.card__name {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.card__stats {
+  margin: 1em 0;
+  width: 100%;
+}
+.card__stats-value {
+  text-align: left;
+}
+.card__stats-title {
+  font-weight: 700;
+  text-align: right;
+}
+
+.circle-container {
+  text-align: center;
+}
+
+.card__ability{
+  text-align: center;
+}
+
+.card--fire {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(10%, #c71800),
+    to(#fcc245)
+  );
+  background: linear-gradient(0deg, #c71800 10%, #fcc245 100%);
+}
+.card--fire .card__type {
+  background-color: #c71800;
+}
+
+.card--normal {
+  background: linear-gradient(140deg, #c4da3d 0%, #6e7f0e 69%, #275009 100%);
+}
+.card--normal .card__type {
+  background: #6e7f0e;
+}
+
+.card--inactive {
+  background: -webkit-gradient(linear, left top, right top, color-stop(34%, #ffde00), color-stop(83%, #e8ff99));
+  background: linear-gradient(90deg, #ffde00 34%, #e8ff99 83%);
+}
+.card--inactive .card__type {
+  background-color: #000;
+}
+
+.green-circle {
+  background-color: #21bf73;
+  border: 0.1075rem solid #0f1c3f;
+  border-radius: 50%;
+  box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+  animation-name: green-alert;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* animation of the Green alert bulb*/
+@keyframes green-alert {
+  0% {
+    background-color: #00a572;
+  }
+  20% {
+    background-color: #50c878;
+  }
+  40% {
+    background-color: #52de97;
+  }
+  60% {
+    background-color: #01796f;
+  }
+  80% {
+    background-color: #21bf73;
+  }
+  100% {
+    background-color: #29ab87;
+  }
+}
+
+.red-circle {
+  background-color: #21bf73;
+  border: 0.1075rem solid #0f1c3f;
+  border-radius: 50%;
+  box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+  animation-name: red-alert;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* animation of the Red alert bulb*/
+@keyframes red-alert {
+  0% {
+    background-color: #ff0000;
+  }
+  20% {
+    background-color: #d60404;
+  }
+  40% {
+    background-color: #9f0101;
+  }
+  60% {
+    background-color: #8d0b0b;
+  }
+  80% {
+    background-color: #df2800;
+  }
+  100% {
+    background-color: #f64b3c;
+  }
+}
+
+.yellow-circle {
+  background-color: #fff;
+  border: 0.1075rem solid #0f1c3f;
+  border-radius: 50%;
+  box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+  
+}
+/*Card (sensor) Styling -end
+ ============================================ */
+
+ /* Media Queries  */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
